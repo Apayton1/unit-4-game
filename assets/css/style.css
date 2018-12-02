@@ -1,0 +1,85 @@
+body{
+    background-image:url("pinkdustBackground.png");
+    color:rgb(66, 138, 201)
+}
+.heading{
+    background-color: rgb(155, 126, 85);
+    border-style: solid
+}
+h1{
+    color:lightblue;
+    font-size:36px;
+    text-align: center;
+    margin:50px;
+    margin-bottom: 20px
+
+}
+.instructions{
+    background-color: rgb(135, 25, 238);
+    color: rgb(0, 183, 255);
+    margin:20px;
+    padding:10px;
+    text-align: justify
+}
+h2{
+    font-size: 28px;
+    padding-bottom: 15px
+    
+}
+.computerNumber{
+    background-color: brown;
+    width: 300px;
+    height: 50px;
+    margin:20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+}
+
+.winLoss{
+    background-color: brown;
+    width: 300px;
+    height: 50px;
+    margin:20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+ul{
+    font-size: 20px;
+}
+li{
+    list-style-type: disc;
+    list-style-position: inside;
+
+}
+#garfield1{
+    height: 200px;
+    width: 200px;
+}
+#blue2{
+    height: 200px;
+    width: 200px;
+}
+#catdog3{
+    height: 200px;
+    width: 200px;
+}
+#scoobydoo4{
+    height: 200px;
+    width: 200px;
+}
+.yourTotal{
+    background-color: brown;
+    width: 300px;
+    margin:20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+}
