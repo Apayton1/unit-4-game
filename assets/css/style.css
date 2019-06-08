@@ -1,52 +1,31 @@
 body{
     background-image:url("pinkdustBackground.png");
-    color:rgb(66, 138, 201)
+    color:rgb(66, 138, 201);
+    font-family: 'Lora', serif;
+    text-align:center;
 }
-.heading{
+.display-4{
     background-color: rgb(155, 126, 85);
     border-style: solid
 }
 h1{
     color:lightblue;
-    font-size:36px;
     text-align: center;
     margin:50px;
     margin-bottom: 20px
 
 }
-.instructions{
+.jumbotron{
     background-color: rgb(135, 25, 238);
     color: rgb(0, 183, 255);
     margin:20px;
     padding:10px;
-    text-align: justify
+    text-align: justify;
 }
 h2{
     font-size: 28px;
     padding-bottom: 15px
     
-}
-.computerNumber{
-    background-color: brown;
-    width: 300px;
-    height: 50px;
-    margin:20px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-
-}
-
-.winLoss{
-    background-color: brown;
-    width: 300px;
-    height: 50px;
-    margin:20px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
 }
 
 ul{
@@ -54,9 +33,10 @@ ul{
 }
 li{
     list-style-type: disc;
-    list-style-position: inside;
+    list-style-position: outside;
 
 }
+
 #garfield1{
     height: 200px;
     width: 200px;
@@ -72,14 +52,4 @@ li{
 #scoobydoo4{
     height: 200px;
     width: 200px;
-}
-.yourTotal{
-    background-color: brown;
-    width: 300px;
-    margin:20px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-
 }

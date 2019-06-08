@@ -1,76 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-            <meta charset="UTF-8">
-            <title> Character Collector Game </title>
-            <link rel = "stylesheet" type = "text/css" href = "assets/css/reset.css">
-            <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-            <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-            <script src=index.html> </script>
-    </head>
-        
-    <body>
-        <div class="heading">
-            <h1>
-                    CHARACTER COLLECTOR!
-            </h1>
-           
-        </div>
-            
-        <div class= "instructions">
 
-            <h2>
-                INSTRUCTIONS:
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src=index.html> </script>
+    <title>Character Collector Game</title>
+</head>
+
+<body>
+    <div id="heading" class="container">
+        <h1 class="display-4 rounded border-0">CHARACTER COLLECTOR!</h1>
+    </div>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid rounded border-0">
+
+            <div id="instructions" class="container">
+                <h2>INSTRUCTIONS:</h2>
+        
                 <ul>
                     <li>YOU WILL BE GIVEN A RANDOM NUMBER AT THE START OF THE GAME. </li>
                     <li>THERE ARE 4 CHARACTERS BELOW.</li>
-                    <li>BY CLICKING ON THE CHARACTERS, YOU WILL ADD A SPECIFIC AMOUNT OF POINTS TO YOUR TOTAL SCORE.</li>
-                    <li>YOU WIN THE GAME BY MATCHING YOUR TOTAL SCORE TO RANDOM NUMBER.</li>
+                    <li>BY CLICKING ON THE CHARACTERS YOU WILL ADD A SPECIFIC AMOUNT OF POINTS TO YOUR TOTAL SCORE.
+                    </li>
+                    <li>YOU WIN THE GAME BY MATCHING YOUR TOTAL SCORE TO THE RANDOM NUMBER SHOWN.</li>
                     <li>YOU LOSE THE GAME IF YOUR TOTAL SCORE GOES ABOVE THE RANDOM NUMBER.</li>
                     <li>THE VALUE OF EACH CRYSTAL IS HIDDEN FROM YOU UNTIL YOU CLICK ON IT.</li>
                     <li>EACH TIME THE GAME STARTS, THE GAME WILL CHANGE THE VALUES OF EACH CHARACTER</li>
                 </ul>
-                    
-            </h2>
+
+            </div>
         </div>
+    </div>
+    <div id="numbers" class="container">
+        <div class="row">
+            <div class="column col-lg-3">
+                <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-header">TARGET NUMBER:</div>
+                    <div class="card-body">
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
 
-        <div class = "computerNumber">
-            <h3>
-                THIS IS THE TARGET NUMBER:
-                <span id="targetNumber"></span>
-            </h3> 
-                
+            <div class="column col-lg-3">
+                <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-header">YOUR TOTAL SCORE IS:</div>
+                    <div class="card-body">
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="column col-lg-3">
+                <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-header">WINS:</div>
+                    <div class="card-body">
+                        <p class="card-text"></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="column col-lg-3">
+                <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-header">LOSSES:</div>
+                    <div class="card-body">
+                        <p class="card-text"></p>
+                    </div>
+
+                </div>
+            </div>
         </div>
+    </div>
 
-        <div class="winLoss">
-            WINS:
-            <span id="winsNumber"></span>
-            
-        </br>
-            LOSSES:
-            <span id="lossNumber"></span>
 
-        </div>
+    <div id ="characterDiv" class="container">
 
-        <div class="cyrstals">
-            <img src="assets\images\garfield.png" alt="GARFIELD" id="garfield1">
-            <img src="assets\images\blue.png" alt="BLUE" id="blue2">
-            <img src="assets\images\catdog.png" alt="CATDOG" id="catdog3">
-            <img src="assets\images\scoobydoo.png" alt="SCOOBYDOO" id="scoobydoo4">
+        <div class="characters">
+            <img src="assets\images\garfield.png" alt="GARFIELD" id ="garfield1" class="img-thumbnail rounded-circle">
+            <img src="assets\images\blue.png" alt="BLUE" id ="blue2" class="img-thumbnail rounded-circle">
+            <img src="assets\images\catdog.png" alt="CATDOG" id ="catdog3" class="img-thumbnail rounded-circle">
+            <img src="assets/images/scoobydoo-2.jpg" alt="SCOOBYDOO" id ="scoobydoo4" class="img-thumbnail rounded-circle">
 
         </div>
+    </div>
 
-        <div class="yourTotal"> 
-                
-            <h3>
-            YOUR TOTAL SCORE IS:
-            </h3>
-                
-            <span id="score"></span>
 
-        </div>
-    
-        
-    </body>
+    </div>
+
+</body>
+
 </html>
+
