@@ -9,7 +9,11 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src=index.html> </script>
+    <script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  
     <title>Character Collector Game</title>
 </head>
 
@@ -42,8 +46,8 @@
             <div class="column col-lg-3">
                 <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
                     <div class="card-header">TARGET NUMBER:</div>
-                    <div class="card-body">
-                        <p class="card-text"></p>
+                    <div id="targetNumberText" class="card-body">
+                    
                     </div>
                 </div>
             </div>
@@ -52,7 +56,7 @@
                 <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
                     <div class="card-header">YOUR TOTAL SCORE IS:</div>
                     <div class="card-body">
-                        <p class="card-text"></p>
+                        <p class="yourTotalText"></p>
                     </div>
                 </div>
             </div>
@@ -63,7 +67,7 @@
                 <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
                     <div class="card-header">WINS:</div>
                     <div class="card-body">
-                        <p class="card-text"></p>
+                        <p class="winsText"></p>
                     </div>
 
                 </div>
@@ -73,7 +77,7 @@
                 <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
                     <div class="card-header">LOSSES:</div>
                     <div class="card-body">
-                        <p class="card-text"></p>
+                        <p class="lossesText"></p>
                     </div>
 
                 </div>
@@ -85,17 +89,17 @@
     <div id ="characterDiv" class="container">
 
         <div class="characters">
-            <img src="assets\images\garfield.png" alt="GARFIELD" id ="garfield1" class="img-thumbnail rounded-circle">
-            <img src="assets\images\blue.png" alt="BLUE" id ="blue2" class="img-thumbnail rounded-circle">
-            <img src="assets\images\catdog.png" alt="CATDOG" id ="catdog3" class="img-thumbnail rounded-circle">
-            <img src="assets/images/scoobydoo-2.jpg" alt="SCOOBYDOO" id ="scoobydoo4" class="img-thumbnail rounded-circle">
+            <button><img src="assets\images\garfield.png" alt="GARFIELD" id ="garfield1" class="img-thumbnail rounded-circle button click"></button>
+            <button><img src="assets\images\blue.png" alt="BLUE" id ="blue2" class="img-thumbnail rounded-circle button click"></button>
+            <button><img src="assets\images\catdog.png" alt="CATDOG" id ="catdog3" class="img-thumbnail rounded-circle button click"></button>
+            <button><img src="assets/images/scoobydoo-2.jpg" alt="SCOOBYDOO" id ="scoobydoo4" class="img-thumbnail rounded-circle button click"></button>
 
         </div>
     </div>
 
 
     </div>
-
+    <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
