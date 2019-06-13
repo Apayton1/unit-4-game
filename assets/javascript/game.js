@@ -10,6 +10,8 @@ $(document).ready(function () {
     var targetNumber = Math.floor(Math.random() * (102)) + 19;
 
 
+
+
     // function targetNumber (min,max) {
     //     return Math.floor(Math.random() * (max - min + 1)) + min;
 
@@ -37,16 +39,27 @@ $(document).ready(function () {
     var number3 = Math.floor(Math.random() * 13) + 1;
     var number4 = Math.floor(Math.random() * 13) + 1;
 
-
+    
     // I TRIED STORING THE NUMBER VARIABLES IN A FUNCTION SO THAT I COULD AVOID HAVING TO LIST EACH
     // VARIABLE IN THE IF ELSE STATEMENT.
-    // var charNumberReset = function () {
-    //     number1 = Math.floor(Math.random() * 13) + 1;
-    //     // $(".yourTotalText").text(number1);
-    //     number2 = Math.floor(Math.random() * 13) + 1;
-    //     number3 = Math.floor(Math.random() * 13) + 1;
-    //     number4 = Math.floor(Math.random() * 13) + 1;
-    // };
+    function charNumberReset() {
+
+        $(".yourTotalText").text("0")
+        
+        number1 = Math.floor(Math.random() * 13) + 1;
+        // $(".yourTotalText").text(number1);
+        number2 = Math.floor(Math.random() * 13) + 1;
+        number3 = Math.floor(Math.random() * 13) + 1;
+        number4 = Math.floor(Math.random() * 13) + 1;
+        targetNumber = Math.floor(Math.random() * (102)) + 19;
+
+        $("#garfield1").attr("data-value", number1);
+        $("#blue2").attr("data-value", number2);
+        $("#catdog3").attr("data-value", number3);
+        $("#scoobydoo4").attr("data-value", number4);
+        $("#targetNumberText").text(targetNumber);
+
+    };
 
 
     $("#garfield1").attr("data-value", number1);
@@ -64,28 +77,17 @@ $(document).ready(function () {
             wins++;
             $(".winsText").text(wins);
             total = 0;
-            // charNumberReset();
-            // number1;
-            // // $(".yourTotalText").text(number1);
-            // number2;
-            // number3;
-            // number4;
-            targetNumber;
+            charNumberReset();
+            document.getElementById("win").play();
 
-
-
+            
         }
         else if (total > targetNumber) {
             losses++;
             $(".lossesText").text(losses);
             total = 0;
-            // charNumberReset();
-            // number1 = Math.floor(Math.random() * 13) + 1;
-            // // $(".yourTotalText").text(number1);
-            // number2 = Math.floor(Math.random() * 13) + 1;
-            // number3 = Math.floor(Math.random() * 13) + 1;
-            // number4 = Math.floor(Math.random() * 13) + 1;
-            targetNumber;
+            charNumberReset();
+            document.getElementById("lose").play();
 
 
         }
